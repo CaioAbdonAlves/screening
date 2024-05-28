@@ -46,6 +46,10 @@ class PriorityQueue {
         return this.items[0].name;
     }
 
+    /**
+     * Retorna todos os itens da fila.
+     * @returns {Object[]} - Itens da fila.
+     */
     getItems() {
         return this.items;
     }
