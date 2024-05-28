@@ -35,6 +35,10 @@ class PriorityQueue {
         return this.items.shift().name;
     }
 
+    /**
+     * Retorna o item da frente da fila.
+     * @returns {string} - Nome do item da frente.
+     */
     front() {
         if (this.isEmpty()) {
             throw new Error('A fila está vazia.');
