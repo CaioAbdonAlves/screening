@@ -54,6 +54,10 @@ class PriorityQueue {
         return this.items;
     }
 
+    /**
+     * Retorna a quantidade de itens na fila.
+     * @returns {number} - Quantidade de itens na fila.
+     */
     size() {
         return this.items.length;
     }
