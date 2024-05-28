@@ -50,4 +50,14 @@ describe('PriorityQueue', () => {
         queue.enqueue({ name: 'Gato', priority: 1 });
         expect(queue.isEmpty()).toBe(false);
     });
+
+    test('O método getItems deve retornar todos os itens da fila.', () => {
+        queue.enqueue({ name: 'Gato', priority: 1 });
+        queue.enqueue({ name: 'Cachorro', priority: 4 });
+
+        expect(queue.getItems()).toEqual([
+        { name: 'Gato', priority: 1 },
+        { name: 'Cachorro', priority: 4 }
+        ]);
+    });
 });
