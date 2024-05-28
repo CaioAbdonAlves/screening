@@ -23,6 +23,14 @@ class PriorityQueue {
         }
     }
 
+    dequeue() {
+        if (this.isEmpty()) {
+            throw new Error('A fila está vazia.');
+        }
+
+        return this.items.shift().name;
+    }
+
     /**
      * Verifica se a fila está vazia.
      * @returns {boolean} - Retorna True se a fila estiver vazia, false caso contrário.
