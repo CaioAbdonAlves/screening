@@ -65,4 +65,7 @@ describe('PriorityQueue', () => {
         expect(() => queue.dequeue()).toThrow('A fila está vazia.');
     });
 
+  test('O método front deve disparar um erro se a lista estiver vazia.', () => {
+    expect(() => queue.front()).toThrow('A fila está vazia.');
+  });
 });
