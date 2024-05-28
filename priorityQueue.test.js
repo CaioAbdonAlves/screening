@@ -44,4 +44,10 @@ describe('PriorityQueue', () => {
 
         expect(queue.size()).toBe(2);
     });
+
+    test('O método isEmpty deve retornar true se a lista estiver vazia.', () => {
+        expect(queue.isEmpty()).toBe(true);
+        queue.enqueue({ name: 'Gato', priority: 1 });
+        expect(queue.isEmpty()).toBe(false);
+    });
 });
