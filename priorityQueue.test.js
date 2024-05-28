@@ -60,4 +60,9 @@ describe('PriorityQueue', () => {
         { name: 'Cachorro', priority: 4 }
         ]);
     });
+
+    test('O método dequeue deve disparar um erro se a lista estiver vazia.', () => {
+        expect(() => queue.dequeue()).toThrow('A fila está vazia.');
+    });
+
 });
