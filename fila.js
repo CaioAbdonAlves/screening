@@ -23,6 +23,10 @@ class PriorityQueue {
         }
     }
 
+    /**
+     * Remove e retorna o item da frente da fila.
+     * @returns {string} - Nome do item removido.
+     */
     dequeue() {
         if (this.isEmpty()) {
             throw new Error('A fila está vazia.');
