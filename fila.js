@@ -35,6 +35,13 @@ class PriorityQueue {
         return this.items.shift().name;
     }
 
+    front() {
+        if (this.isEmpty()) {
+            throw new Error('A fila está vazia.');
+        }
+        return this.items[0].name;
+    }
+
     /**
      * Verifica se a fila está vazia.
      * @returns {boolean} - Retorna True se a fila estiver vazia, false caso contrário.
