@@ -37,4 +37,11 @@ describe('PriorityQueue', () => {
         { name: 'Cachorro', priority: 4 }
         ]);
     });
+
+    test('O método size deve retornar o número correto de itens na fila', () => {
+        queue.enqueue({ name: 'Gato', priority: 1 });
+        queue.enqueue({ name: 'Cachorro', priority: 4 });
+
+        expect(queue.size()).toBe(2);
+    });
 });
