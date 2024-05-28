@@ -7,7 +7,7 @@ describe('PriorityQueue', () => {
         queue = new PriorityQueue();
     });
     
-    test('O método enqueue deve adicionar itens corretamente', () => {
+    test('O método enqueue deve adicionar itens corretamente.', () => {
         queue.enqueue({ name: 'Gato', priority: 1 });
         queue.enqueue({ name: 'Cachorro', priority: 4 });
         queue.enqueue({ name: 'Coelho', priority: 2 });
@@ -17,5 +17,13 @@ describe('PriorityQueue', () => {
         { name: 'Coelho', priority: 2 },
         { name: 'Cachorro', priority: 4 }
         ]);
+    });
+
+    test('O método dequeue deve remover e retornar o item corretamente.', () => {
+        queue.enqueue({ name: 'Gato', priority: 1 });
+        queue.enqueue({ name: 'Cachorro', priority: 4 });
+        
+        expect(queue.dequeue()).toBe('Gato');
+        expect(queue.getItems()).toEqual([{ name: 'Cachorro', priority: 4 }]);
     });
 });
