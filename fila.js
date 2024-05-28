@@ -22,6 +22,10 @@ class PriorityQueue {
             this.items.splice(index, 0, item);
         }
     }
+
+    isEmpty() {
+        return this.items.length === 0;
+    }
 }
 
 module.exports = PriorityQueue;
