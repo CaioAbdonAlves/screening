@@ -1,0 +1,15 @@
+{
+  "name": "screening",
+  "version": "1.0.0",
+  "description": "Este repositório contém um teste simples que deve ser aplicado em caráter de \"screening\" para vagas de Node.js na ST-One.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
