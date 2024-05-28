@@ -54,6 +54,10 @@ class PriorityQueue {
         return this.items;
     }
 
+    size() {
+        return this.items.length;
+    }
+
     /**
      * Verifica se a fila está vazia.
      * @returns {boolean} - Retorna True se a fila estiver vazia, false caso contrário.
