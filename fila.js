@@ -89,4 +89,5 @@ console.log(queue.dequeue()); // Gato
 console.log(queue.front()); // Coelho
 console.log(queue.size()); // 6
 console.log(queue.isEmpty()); // false
+queue.enqueue({ name: 'Elefante', priority: 1 });
 console.log(queue.getItems());
