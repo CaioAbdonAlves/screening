@@ -72,3 +72,21 @@ class PriorityQueue {
 }
 
 module.exports = PriorityQueue;
+
+
+// Exemplo de uso
+const queue = new PriorityQueue();
+queue.enqueue({ name: 'Sapo', priority: 7 });
+queue.enqueue({ name: 'Cachorro', priority: 4 });
+queue.enqueue({ name: 'Coelho', priority: 2 });
+queue.enqueue({ name: 'Vaca', priority: 3 });
+queue.enqueue({ name: 'Papagaio', priority: 6 });
+queue.enqueue({ name: 'Galinha', priority: 5 });
+queue.enqueue({ name: 'Gato', priority: 1 });
+
+console.log(queue.getItems());
+console.log(queue.dequeue()); // Gato
+console.log(queue.front()); // Coelho
+console.log(queue.size()); // 6
+console.log(queue.isEmpty()); // false
+console.log(queue.getItems());
