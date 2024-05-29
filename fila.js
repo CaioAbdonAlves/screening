@@ -23,6 +23,14 @@ class PriorityQueue {
         }
     }
 
+    enqueueMultiple(items) {
+        if (!Array.isArray(items)) {
+            throw new Error('Deve ser fornecido um array de objetos (Itens)')
+        }
+
+        items.forEach((item) => this.enqueue(item));
+    }
+
     /**
      * Remove e retorna o item da frente da fila.
      * @returns {string} - Nome do item removido.
@@ -73,9 +81,16 @@ class PriorityQueue {
 
 module.exports = PriorityQueue;
 
+const items = [
+  { name: 'Coelho', priority: 2 },
+  { name: 'Vaca', priority: 2 },
+  { name: 'Cachorro', priority: 4 }
+]
+
 
 // Exemplo de uso
 const queue = new PriorityQueue();
+queue.enqueueMultiple(items)
 queue.enqueue({ name: 'Sapo', priority: 7 });
 queue.enqueue({ name: 'Cachorro', priority: 4 });
 queue.enqueue({ name: 'Coelho', priority: 2 });
